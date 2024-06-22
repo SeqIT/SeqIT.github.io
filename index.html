@@ -197,9 +197,13 @@
           <p>Our ablation results show that our method are agnostic to the choice of both base model and generation models. For both G=</p>
 
           <h4 class="title is-8">(B) Is Sequence Length the Driving Factor Behind Performance? </h4> 
-          <p>Self-RAG enables practitioners to tailor model's behaviors for different fine-grained preferences. For instance, putting more emphasis on whether a model generation is supported by the evidence can increase citation precision (precision in Figure (b)) on long-form generation, while putting less emphasis on it can increase the output fluency as a model may generate output more flexibly and fluently, regardless of whether it is supported by the cite evidence.</p>
+          <p>A variable factor in our comparison of IT and SIT is the length of the training data, based on this, we
+            prepare three ablation experiments to investigate whether SIT’s higher metric scores are attributed to
+            merely having more training tokens.</p>
           <h4 class="title is-8">(C) Root Verb anylaze in new instructions</h4>
-          <p>Self-RAGgenerates retrieval tokens by itself when it judges retrieval is necessary, while one can also increase or decrease retrieval frequency based on diverse end tasks. As you can see, retrieval less can hurt performance on Open domain QA (PopQA; 40% relative performance drop) while it gives marginal performance deterioration in fact verification task (PubHealth; 2%).</p>
+          <p>we check the kinds of instructions generated via Seq-Instruct and draw potential links to
+            model improvements in different skill types. We identify the verb-noun structure in the generated
+            instructions using the Berkeley Neural Parser. </p>
         </div>
       </section>
 
