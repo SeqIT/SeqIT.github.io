@@ -242,7 +242,7 @@
           <p>
           <span style="color: red"><b>SIT</b></span> outperforms vanilla IT or WizardLM (response regenerated using the same models) across generic tasks, such as reasoning and coding task. And outperforming in sequential tasks by a large margin. 
           </p>
-          <img src="static/images/main-general.svg" alt="results">
+          <img src="static/images/main-general.svg" alt="results" style="width: 100% !important; max-width: none !important" />
         </div>
         <div class="content has-text-justified">
           <h3 class="title is-4">Analysis</h3>
@@ -253,14 +253,13 @@
             }
           
             .image-container img {
-              max-width: 85%; /* Ensures images are responsive */
+              max-width: 100%; /* Ensures images are responsive */
               height: auto;
             }
           </style>
           
           <div class="image-container">
-            <img src="static/images/ablation.svg" alt="analysis results">
-            <img src="static/images/root_verb.jpg" alt="Root verb distribution">
+            <img src="static/images/ablation.svg" alt="ablation results" style="width: 100% !important; max-width: none !important" />
           </div>
           <h4 class="title is-8">(A) Ablations</h4>
           <p>Our ablation results show that our method are agnostic to the choice of both base model and generation models. For both G=</p>
