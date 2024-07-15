@@ -1,30 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .quote-container {
-            border: 2px dashed #d3d3d3;
-            border-radius: 10px;
-            padding: 20px;
-            width: fit-content;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
-            color: #2f4f4f;
-        }
-        .quote {
-            font-style: italic;
-            color: #5f9ea0;
-        }
-        .author {
-            text-align: right;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-    </style>
-    <title>Quote Box</title>
-</head>
 
 <head>
   <meta charset="utf-8">
@@ -151,10 +126,35 @@
   </div>
 </section>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .quote-container {
+          border: 2px dashed #d3d3d3;
+          border-radius: 10px;
+          padding: 20px;
+          width: fit-content;
+          margin: 20px auto;
+          font-family: Arial, sans-serif;
+          color: #2f4f4f;
+      }
+      .quote {
+          font-style: italic;
+          color: #5f9ea0;
+      }
+      .author {
+          text-align: right;
+          margin-top: 10px;
+          font-weight: bold;
+      }
+  </style>
+  <title>Quote Box</title>
+</head>
 
 <div class="quote-container">
-  <p class="quote">"Globally, people express pride, celebrate, and respect cultural diversity, while acknowledging and working towards reducing cultural bias"</p>
-  <p class="author">------ CultureBank</p>
+  <p class="quote">"Finish the paper, release the code and data, and then tweet about this paper"</p>
+  <p class="author">—- Can language model handle this kind of sequential instructions well?</p>
 </div>
 
 </section>
@@ -164,7 +164,7 @@
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">SeqIT</span> trained on dataset augmented with sequential instructions, enhancing both generic tasks and sequential tasks compared to standard Instruction Tuning methods.
       </h2>
-      <img src="static/images/mainfig_nips24.jpg" alt="SeqIT" />
+      <img class="custom-size-image" src="static/images/mainfig_nips24.jpg" alt="SeqIT" style="width: 150%; margin-left: -25%;" />
     </div>
   </div>
 </section>
