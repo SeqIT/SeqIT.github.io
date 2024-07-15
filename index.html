@@ -169,13 +169,36 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          Despite the success of existing instruction-tuned models, we find that they usually struggle to follow sequential instructions  to queries with <b>multiple instructions</b>. This impairs their
+          performance in complex problems whose solution consists of multiple intermediate tasks. 
+          Therefore, we contend that part of the fine-tuning data mixture should be
+          sequential—containing a chain of interrelated tasks. We first approach sequential
+          instruction tuning from a task-driven perspective, manually creating multilingual and multimodal tasks: namely “translate then predict” and “caption then answer”. 
+          Next, we further push the boundary by turning instructions in existing datasets (e.g., Alpaca, FlanCoT and Tulu) into diverse
+          and complex sequential instructions, making our method general-purpose. Models
+          that underwent our sequential instruction tuning show improved results in reasoning and open-ended generation. 
+          Moreover, we put forward a new benchmark named <b>SeqEval</b> to evaluate a model's ability to follow all the instructions in a
+          sequence, which further corroborates the benefits of our fine-tuning method.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Summary</h2>
+        <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p><b>The issue: Instruction-tuned models perform poorly in sequential tasks</b><br>Despite models showed remarkable capabilities on single instructions, we find that they usually struggle to respond to queries with multiple instructions. 
             This impairs their performance in complex problems whose solution consists of multiple intermediate tasks.
