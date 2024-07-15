@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .quote-container {
+            border: 2px dashed #d3d3d3;
+            border-radius: 10px;
+            padding: 20px;
+            width: fit-content;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            color: #2f4f4f;
+        }
+        .quote {
+            font-style: italic;
+            color: #5f9ea0;
+        }
+        .author {
+            text-align: right;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Quote Box</title>
+</head>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
@@ -125,6 +151,12 @@
   </div>
 </section>
 
+
+<div class="quote-container">
+  <p class="quote">"Globally, people express pride, celebrate, and respect cultural diversity, while acknowledging and working towards reducing cultural bias"</p>
+  <p class="author">------ CultureBank</p>
+</div>
+
 </section>
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -211,17 +243,21 @@
       </section>
 
 
-
+# how to center the bibtex section
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{Hu2024FinetuningLL,
-      title={SIT: Fine-tuning Large Language Models with Sequential Instructions},
-      author={Hanxu Hu and Simon Yu and Pinzhen Chen and Edoardo Maria Ponti},
-      journal={ArXiv},
-      year={2024},
-      volume={abs/2403.07794}
-    }</code></pre>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">BibTeX</h2>
+        <pre><code>@article{Hu2024FinetuningLL,
+          title={SIT: Fine-tuning Large Language Models with Sequential Instructions},
+          author={Hanxu Hu and Simon Yu and Pinzhen Chen and Edoardo Maria Ponti},
+          journal={ArXiv},
+          year={2024},
+          volume={abs/2403.07794}
+        }</code></pre>
+      </div>
+    </div>
   </div>
 </section>
 
