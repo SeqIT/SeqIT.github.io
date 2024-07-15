@@ -152,42 +152,33 @@
   <title>Quote Box</title>
 </head>
 
+<head>
+  <style>
+    .hero.teaser.custom-teaser .container.custom-container .hero-body.custom-hero-body {
+      overflow: visible !important; /* Ensure the overflow is visible */
+      position: relative;
+    }
+
+    .hero.teaser.custom-teaser .container.custom-container .hero-body.custom-hero-body img.custom-size-image {
+      width: 200% !important; /* Increase the width significantly */
+      margin-left: -50% !important; /* Adjust the margin to extend outside the container */
+      display: block;
+    }
+
+    .hero.teaser.custom-teaser {
+      overflow: visible !important; /* Ensure the section allows overflow */
+    }
+
+    .container.custom-container {
+      overflow: visible !important; /* Ensure the container allows overflow */
+    }
+  </style>
+</head>
+
 <div class="quote-container">
   <p class="quote">"Finish the paper, release the code and data, and then tweet about this paper"</p>
   <p class="author">—- Can language model handle this kind of sequential instructions well?</p>
 </div>
-
-<style>
-  .custom-size-image {
-    width: 200%; /* Increase the width to 150% of the original size */
-    margin-left: -25%; /* Adjust the margin to extend outside the container */
-  }
-  
-  .hero-body {
-    overflow: visible; /* Ensure the overflow is visible to show the extended image */
-    position: relative; /* Ensure proper positioning of child elements */
-  }
-  
-  .container.is-max-desktop {
-    overflow: visible; /* Ensure the container allows overflow */
-  }
-  
-  .teaser {
-    overflow: visible; /* Ensure the section allows overflow */
-  }
-  </style>
-
-</section>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">SeqIT</span> trained on dataset augmented with sequential instructions, enhancing both generic tasks and sequential tasks compared to standard Instruction Tuning methods.
-      </h2>
-      <img class="custom-size-image" src="static/images/mainfig_nips24.jpg" alt="SeqIT" />
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -212,6 +203,18 @@
     <!--/ Abstract. -->
 </section>
 
+
+</section>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <h2 class="subtitle has-text-centered">
+        <span class="dnerf">SeqIT</span> trained on dataset augmented with sequential instructions, enhancing both generic tasks and sequential tasks compared to standard Instruction Tuning methods.
+      </h2> -->
+      <img class="custom-size-image" src="static/images/mainfig_nips24.jpg" alt="SeqIT" />
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
